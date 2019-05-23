@@ -1,1 +1,7 @@
 2019-05-22 14:31:40,904 [Thread-7:1980 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /
+2019-05-22 16:33:06,957 [ThreadPoolExecutor-0_0:15248 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /
+2019-05-22 16:43:20,291 [ThreadPoolExecutor-0_0:8676 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /
+2019-05-22 16:43:20,394 [ThreadPoolExecutor-0_0:8676 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-05-22 16:46:01,878 [ThreadPoolExecutor-0_3:15184 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-05-22 16:47:42,743 [ThreadPoolExecutor-0_6:11216 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-05-22 17:10:52,863 [ThreadPoolExecutor-0_11:12580 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /favicon.ico

@@ -25,7 +25,7 @@ SECRET_KEY = '3722+o1i!))zulmfoh38%2(r#z&wl4qzufvmso2n1p(xaw^wld'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.mail',  # 邮件验证模块
     'apps.log',  # 日志配置模块
+    'apps.chat',  # 实时聊天模块
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +71,7 @@ TEMPLATES = [
     },
 ]
 
+# 注意替换自己项目的名称
 WSGI_APPLICATION = 'djangoweb.wsgi.application'
 
 
@@ -235,3 +238,27 @@ LOGGING = {
         },
     }
 }
+
+# djangoweb/settings.py
+ASGI_APPLICATION = 'djangoweb.routing.application'
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
+
+
+
+
+
+
+
+
+
+
+
+
