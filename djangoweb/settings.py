@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps.log',  # 日志配置模块
     'apps.chat',  # 实时聊天模块
     'channels',
+    'apps.cscom',  # 自定义命令模块
 ]
 
 MIDDLEWARE = [
