@@ -60,3 +60,5 @@ Traceback (most recent call last):
   File "D:\ProgramData\Anaconda31\lib\site-packages\django\db\models\fields\__init__.py", line 966, in get_prep_value
     return int(value)
 ValueError: invalid literal for int() with base 10: ''
+2019-05-30 15:00:52,510 [ThreadPoolExecutor-0_0:2364 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /page/index/1/
+2019-05-30 15:01:06,703 [ThreadPoolExecutor-0_1:14624 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /page/index/1/

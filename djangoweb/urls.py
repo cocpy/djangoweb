@@ -16,6 +16,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +26,6 @@ urlpatterns = [
     path('message/', include(('apps.message.urls', 'apps.message'), namespace='message')),  # 消息提示模块
     path('page/', include(('apps.page.urls', 'apps.page'), namespace='page')),  # 数据分页模块
     path('ajax/', include(('apps.ajax.urls', 'apps.ajax'), namespace='ajax')),  # Ajax模块
-    # path('',),  # 首页
+    path('', views.index),  # 首页
 
 ]
