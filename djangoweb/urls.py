@@ -23,4 +23,7 @@ urlpatterns = [
     path('mail/', include(('apps.mail.urls', 'apps.mail'), namespace='mail')),  # 邮件验证模块
     path('chat/', include(('apps.chat.urls', 'apps.chat'), namespace='chat')),  # 实时聊天模块
     path('message/', include(('apps.message.urls', 'apps.message'), namespace='message')),  # 消息提示模块
+    path('page/', include(('apps.page.urls', 'apps.page'), namespace='page')),  # 数据分页模块
+    # path('',),  # 首页
+
 ]

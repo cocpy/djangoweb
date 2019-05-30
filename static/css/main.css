@@ -1,3 +1,7 @@
+#main .pagenation{height:32px;text-align:center;font-size:0;margin:30px auto;}
+#main .pagenation a{display:inline-block;border:1px solid #d2d2d2;background-color:#f8f6f7;font-size:12px;padding:7px 10px;color:#666;margin:5px;}
+#main .pagenation .active{background-color:#fff;color:#43a200;}
+
 /*登录*/
 #top .login_logo{width:1200px; margin:0 auto;}
 #top .login_logo a{float:left; margin-top:20px;}

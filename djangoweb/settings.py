@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'channels',
     'apps.cscom',  # 自定义命令模块
     'apps.message',  # 消息提示模块
+    'apps.page',  # 数据分页模块
 ]
 
 MIDDLEWARE = [

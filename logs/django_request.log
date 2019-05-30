@@ -17,3 +17,8 @@ Traceback (most recent call last):
   File "D:\ProgramData\Anaconda31\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
 TypeError: receive_message() missing 1 required positional argument: 'request'
+2019-05-30 11:43:06,108 [ThreadPoolExecutor-0_0:12548 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /
+2019-05-30 11:43:06,329 [ThreadPoolExecutor-0_0:12548 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-05-30 11:43:15,780 [ThreadPoolExecutor-0_1:16052 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /page/1
+2019-05-30 11:43:27,082 [ThreadPoolExecutor-0_0:12548 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /page/index/1
+2019-05-30 11:43:37,657 [ThreadPoolExecutor-0_1:16052 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /page/index/1/
