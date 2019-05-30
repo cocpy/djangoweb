@@ -22,3 +22,41 @@ TypeError: receive_message() missing 1 required positional argument: 'request'
 2019-05-30 11:43:15,780 [ThreadPoolExecutor-0_1:16052 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /page/1
 2019-05-30 11:43:27,082 [ThreadPoolExecutor-0_0:12548 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /page/index/1
 2019-05-30 11:43:37,657 [ThreadPoolExecutor-0_1:16052 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /page/index/1/
+2019-05-30 14:21:13,920 [ThreadPoolExecutor-0_0:12532 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /
+2019-05-30 14:21:21,845 [ThreadPoolExecutor-0_0:12532 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /init/
+2019-05-30 14:21:34,468 [ThreadPoolExecutor-0_1:13328 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /ajax/init/
+2019-05-30 14:29:17,554 [ThreadPoolExecutor-0_2:7500 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /type_detail
+2019-05-30 14:29:21,169 [ThreadPoolExecutor-0_3:9252 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /type_detail
+2019-05-30 14:30:11,989 [ThreadPoolExecutor-0_0:18300 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /type_detail/
+2019-05-30 14:35:22,931 [ThreadPoolExecutor-0_0:6860 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /type_detail
+2019-05-30 14:37:29,116 [ThreadPoolExecutor-0_6:18036 prototype] [django.request:228 prototype] [log:log_response] [ERROR]- Internal Server Error: /ajax/type_detail
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\pyproject\djangoweb\apps\ajax\views.py", line 19, in find_type
+    type_detail = TypeDetail.objects.filter(type_id=type_id)
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\db\models\sql\query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\db\models\fields\related_lookups.py", line 115, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\db\models\fields\__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
