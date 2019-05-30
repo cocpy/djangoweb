@@ -22,4 +22,5 @@ urlpatterns = [
     path('log/', include(('apps.log.urls', 'apps.log'), namespace='log')),  # 日志配置
     path('mail/', include(('apps.mail.urls', 'apps.mail'), namespace='mail')),  # 邮件验证模块
     path('chat/', include(('apps.chat.urls', 'apps.chat'), namespace='chat')),  # 实时聊天模块
+    path('message/', include(('apps.message.urls', 'apps.message'), namespace='message')),  # 消息提示模块
 ]

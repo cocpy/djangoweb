@@ -5,3 +5,15 @@
 2019-05-22 16:46:01,878 [ThreadPoolExecutor-0_3:15184 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /favicon.ico
 2019-05-22 16:47:42,743 [ThreadPoolExecutor-0_6:11216 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /favicon.ico
 2019-05-22 17:10:52,863 [ThreadPoolExecutor-0_11:12580 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-05-30 09:23:53,903 [ThreadPoolExecutor-0_0:1440 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /
+2019-05-30 09:23:54,104 [ThreadPoolExecutor-0_0:1440 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-05-30 09:27:44,794 [ThreadPoolExecutor-0_0:16828 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /
+2019-05-30 10:29:30,597 [ThreadPoolExecutor-0_0:3728 prototype] [django.request:228 prototype] [log:log_response] [ERROR]- Internal Server Error: /message/receive/
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\ProgramData\Anaconda31\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: receive_message() missing 1 required positional argument: 'request'

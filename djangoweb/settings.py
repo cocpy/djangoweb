@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'apps.chat',  # 实时聊天模块
     'channels',
     'apps.cscom',  # 自定义命令模块
+    'apps.message',  # 消息提示模块
 ]
 
 MIDDLEWARE = [
