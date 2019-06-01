@@ -26,6 +26,7 @@ urlpatterns = [
     path('message/', include(('apps.message.urls', 'apps.message'), namespace='message')),  # 消息提示模块
     path('page/', include(('apps.page.urls', 'apps.page'), namespace='page')),  # 数据分页模块
     path('ajax/', include(('apps.ajax.urls', 'apps.ajax'), namespace='ajax')),  # Ajax模块
+    path('search/', include(('apps.search.urls', 'apps.search'), namespace='search')),  # 全局搜索模块
     path('', views.index),  # 首页
 
 ]

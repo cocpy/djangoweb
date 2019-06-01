@@ -62,3 +62,8 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: ''
 2019-05-30 15:00:52,510 [ThreadPoolExecutor-0_0:2364 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /page/index/1/
 2019-05-30 15:01:06,703 [ThreadPoolExecutor-0_1:14624 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /page/index/1/
+2019-05-30 15:14:32,683 [ThreadPoolExecutor-0_3:9152 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-05-31 16:12:56,245 [ThreadPoolExecutor-0_0:2448 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-05-31 16:47:03,146 [ThreadPoolExecutor-0_0:9384 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /search/index.html/
+2019-06-01 08:16:48,674 [ThreadPoolExecutor-0_0:9756 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /favicon.ico
+2019-06-01 08:17:14,734 [ThreadPoolExecutor-0_2:4272 prototype] [django.request:228 prototype] [log:log_response] [WARNING]- Not Found: /search/index.html/

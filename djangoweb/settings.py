@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'apps.message',  # 消息提示模块
     'apps.page',  # 数据分页模块
     'apps.ajax',  # Ajax模块
+    'haystack',
+    'apps.search',  # 全局搜索模块
 ]
 
 MIDDLEWARE = [
@@ -255,8 +257,20 @@ CHANNEL_LAYERS = {
     },
 }
 
-
-
+# 配置HayStack
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        # 设置搜索引擎，文件是apps下的serach的whoosh_cn_backend.py
+        # 如果search模块未在apps下请自行替换或者去掉apps
+        'ENGINE': 'apps.search.whoosh_cn_backend.WhooshEngine',
+        'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
+        'INCLUDE_SPELLING': True,
+    },
+}
+# 设置每页显示的数据量
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 2
+# 当数据库改变时，自动更新索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 
 
