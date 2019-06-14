@@ -4,6 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <title>消息提示</title>
+    <style>
+	.messages{
+		width:98%;
+		text-align:center; /*居中*/
+	}
+	/*列表样式*/
+	li{
+		list-style:none;
+		font-size:14pt;
+		padding:5px;
+
+	}
+	/*提示信息样式*/
+	.info{
+		color:blue;
+		text-align:center;
+	}
+	/*成功信息样式*/
+	.success{
+		color:green;
+	}
+	/*警告信息样式*/
+	.warning{
+		color:orange;
+	}
+	/*错误信息样式*/
+	.error{
+		color:red;
+	}
+    </style>
     <script src={% static 'js/jquery.min.js' %}></script>
 </head>
 <body>
