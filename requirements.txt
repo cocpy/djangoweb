@@ -7,4 +7,4 @@ jieba==0.39
 Whoosh==2.7.4
 itsdangerous==1.1.0
 django_haystack==2.8.1
-mysqlclient==1.4.2.post1
+mysqlclient
